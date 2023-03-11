@@ -26,9 +26,6 @@ Route::controller(DemoController::class)->group(
     }
 );
 
-
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
